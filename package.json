@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/itssinghankit/2100270100024/issues"
   },
-  "homepage": "https://github.com/itssinghankit/2100270100024#readme"
+  "homepage": "https://github.com/itssinghankit/2100270100024#readme",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "http-errors": "^2.0.0",
+    "mongoose": "^8.4.1"
+  }
 }
