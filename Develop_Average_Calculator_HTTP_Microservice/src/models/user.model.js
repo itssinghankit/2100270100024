@@ -2,29 +2,20 @@ import mongoose, { Schema } from "mongoose";
 
 const calculatorSchema = new Schema({
     numbers: {
-        type: Array,
-        unique: true,
-        required: true,
-        trim: true,
-        lowercase: true,
-        index: true
+        type: [Number],
+        required: true
     },
     windowPrevState: {
-        type: String,
-        unique: true,
-        required: true,
-        trim: true,
-        lowercase: true,
-        index: true
+        type: [Number],
+        required: true
     },
     windowCurrState: {
-        type: String,
+        type: [Number],
         required: true
     }
     ,
     avg: {
-        type: String,
-        trim: true
+        type: Number,
     }
 }
 )
