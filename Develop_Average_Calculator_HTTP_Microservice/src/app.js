@@ -19,11 +19,11 @@ app.use(cookieParser());
 import userRouter from "./routes/user.routes.js";
 //routes
 
-app.get("/api/v1", (req, res) => {
-    res.json({message:"Hello from v1 backend"});
-});
+// app.get("/api/v1", (req, res) => {
+//     res.json({message:"Hello from v1 backend"});
+// });
 
-app.use("/api/v1/user", userRouter);
+app.use("/api/v1", userRouter);
 
 //error generation
 app.use(async (req, res, next) => {
