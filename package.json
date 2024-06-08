@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules Develop_Average_Calculator_HTTP_Microservice/src/index.js",
+    "server": "node -r dotenv/config --experimental-json-modules Develop_Average_Calculator_HTTP_Microservice/src/index.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,7 @@
     "axios": "^1.7.2",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "http-errors": "^2.0.0",
     "mongoose": "^8.4.1"
