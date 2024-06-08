@@ -29,7 +29,6 @@ const calculator = asyncHandler(async (req, res) => {
         response=await requestTestServer("primes")
     }else if(numberid=="f"){
         response=await requestTestServer("fibo")
-    
     }else if(numberid=="r"){
         response=await requestTestServer("rand")
     }else if(numberid=="e"){
