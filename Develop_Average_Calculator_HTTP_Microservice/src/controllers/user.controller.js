@@ -55,7 +55,7 @@ const calculator = asyncHandler(async (req, res) => {
         return res.status(200).json(calculator);
     }else{
         const prevState=isExist.windowCurrState;
-        const updated=await calculatorModel.findOneAndUpdate({},{ numbers: response.numbers, windowPrevState: prevState, windowCurrState: response.numbers, avg: parseInt(avg)});
+        const updated=await calculatorModel.findOneAndUpdate({},{ numbers: response.numbers, windowPrevState: prevState, windowCurrState: response.numbers, avg: parseInt(avg)}, {new: true});
         return res.status(200).json(updated);
     }
 
